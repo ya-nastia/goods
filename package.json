@@ -1,0 +1,38 @@
+{
+    "name": "scrapper",
+    "version": "1.0.0",
+    "description": "",
+    "main": "bot.js",
+    "scripts": {
+        "start": "babel-node goods.js",
+        "start2": "babel-node goods2.js",
+        "start3": "babel-node goods3.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/preset-env": "^7.7.7",
+        "async": "^3.1.0",
+        "base64-img": "^1.0.4",
+        "chalk": "^2.4.2",
+        "cheerio": "^1.0.0-rc.3",
+        "cherio": "^1.0.0-rc.2",
+        "fetch": "^1.1.0",
+        "fs": "0.0.1-security",
+        "lodash": "^4.17.15",
+        "node-fetch": "^2.6.0",
+        "puppeteer": "^1.20.0",
+        "puppeteer-autoscroll-down": "^0.1.2",
+        "puppeteer-xpath": "^0.1.0",
+        "tesseract.js": "^2.1.1",
+        "throw": "^1.1.0",
+        "transliteration": "^2.1.8"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.12.10",
+        "@babel/core": "^7.12.10",
+        "@babel/helpers": "^7.12.5",
+        "@babel/node": "^7.12.10"
+    }
+}
