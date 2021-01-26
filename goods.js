@@ -31,12 +31,12 @@ const selector = inout.selector1;
             let link = selector.domen + $(elem).find(selector.catalogText1).attr('href');
             let name = $(elem).find(selector.catalogText1).attr('main_category_tile');
             let img = $(elem).find(selector.catalogImg1).attr('src');
-            if (name != 'Новогодняя машина кэшбэка') {
+            if (!$(elem).find(selector.skipItem).length > 0) {
                 catalog1.push(name + ';' + link + ';' + img + ';');
             }
         })
 
-        //console.log('cat1:' + catalog1.length, catalog1);
+        console.log('cat1:' + catalog1.length, catalog1);
 
         for (let i = 0; i < catalog1.length; i++) {
 
@@ -98,7 +98,7 @@ const selector = inout.selector1;
             } else {
                 let catalog = catalog3[i];
                 lineSaver(catalog, inout.outputFile1);
-                console.log(console.log('В каталоге ' + catalog3[i].split(';')[0] + '->' + catalog3[i].split(';')[3] + '->' + catalog3[i].split(';')[6] + ' подкатологов нет!'););
+                console.log('В каталоге ' + catalog3[i].split(';')[0] + '->' + catalog3[i].split(';')[3] + '->' + catalog3[i].split(';')[6] + ' подкатологов нет!');
             }
         }
     } catch(e) {
