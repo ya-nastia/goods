@@ -6,6 +6,7 @@ const selector1 = {
     catalogPlashka: '.menu-cards__col',
     catalogImg1: 'img', //attr
     catalogText1: '.menu-cards__inner a.front', // attr alt
+    skipItem: '.menu-cards__banner',
     
     catalogPlashka2: '.col-xs-4',
     catalogImg2: '.col-xs-4 .photo img', 
