@@ -78,6 +78,8 @@ const lines = [...new Set(inout.lines1)];
                     lineSaver(catalog, inout.outputFile2);
                 })
             } 
+            console.log('Парсинг окончен')
+            await browser.close();
         } catch(e) {
             console.log(e);
         }

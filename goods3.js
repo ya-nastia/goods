@@ -87,6 +87,9 @@ const lines = [...new Set(inout.lines2)];
             //console.log(i);
             //console.log('----------------------------')
 
+            console.log('Парсинг окончен')
+            await browser.close();
+
         } catch(e) {
             console.log(e)
             await lineSaver(lines[index], inout.outputFailed3)

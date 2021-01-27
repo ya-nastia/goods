@@ -101,6 +101,8 @@ const selector = inout.selector1;
                 console.log('В каталоге ' + catalog3[i].split(';')[0] + '->' + catalog3[i].split(';')[3] + '->' + catalog3[i].split(';')[6] + ' подкатологов нет!');
             }
         }
+        console.log('Парсинг окончен')
+        await browser.close();
     } catch(e) {
         console.log(e);
     }
